@@ -1,13 +1,12 @@
 <template>
   <div id="app">
-      {{contador}}
+    {{contador}}
+    <button @click="contador += 1">Adicionar</button>
   </div>
 </template>
 <script>
   export default {
-
-    
-    data:function (){
+    data(){
       return{
         contador:1,
       }
@@ -17,7 +16,5 @@
 
 <style>
   #app{
-    background-color: currentColor;
-    color: #fff;
   }
 </style>
